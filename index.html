@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/input.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>second project</title>
+  </head>
+ 
+  <body class="bg-gray-100">
+    <div class="flex h-screen">
+     <!-- Sidebar -->
+     <div class="w-64 bg-white border-r">
+      <div class="p-4 border-b">
+       <div class="flex items-center">
+        <img alt="User avatar" class="rounded-full mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/lGCZfgt1B20oGS0VIXjSZd0TvpVeu5w6XiqRB5aoln4GG04TA.jpg" width="40"/>
+        <span class="font-semibold">
+         Alicia Koch
+        </span>
+       </div>
+      </div>
+      <div class="p-4">
+       <ul>
+        <li class="flex items-center justify-between py-2">
+         <span class="flex items-center">
+          <i class="fas fa-inbox mr-2">
+          </i>
+          Inbox
+         </span>
+         <span class="text-sm font-semibold">
+          128
+         </span>
+        </li>
+        <li class="flex items-center justify-between py-2">
+         <span class="flex items-center">
+          <i class="fas fa-file-alt mr-2">
+          </i>
+          Drafts
+         </span>
+         <span class="text-sm font-semibold">
+          9
+         </span>
+        </li>
+        <li class="flex items-center justify-between py-2">
+         <span class="flex items-center">
+          <i class="fas fa-paper-plane mr-2">
+          </i>
+          Sent
+         </span>
+        </li>
+        <li class="flex items-center justify-between py-2">
+         <span class="flex items-center">
+          <i class="fas fa-trash-alt mr-2">
+          </i>
+          Junk
+         </span>
+         <span class="text-sm font-semibold">
+          23
+         </span>
+        </li>
+        <li class="flex items-center justify-between py-2">
+         <span class="flex items-center">
+          <i class="fas fa-trash mr-2">
+          </i>
+          Trash
+         </span>
+        </li>
+        <li class="flex items-center justify-between py-2">
+         <span class="flex items-center">
+          <i class="fas fa-archive mr-2">
+          </i>
+          Archive
+         </span>
+        </li>
+       </ul>
+       <div class="mt-4">
+        <ul>
+         <li class="flex items-center justify-between py-2">
+          <span class="flex items-center">
+           <i class="fas fa-users mr-2">
+           </i>
+           Social
+          </span>
+          <span class="text-sm font-semibold">
+           972
+          </span>
+         </li>
+         <li class="flex items-center justify-between py-2">
+          <span class="flex items-center">
+           <i class="fas fa-bell mr-2">
+           </i>
+           Updates
+          </span>
+          <span class="text-sm font-semibold">
+           342
+          </span>
+         </li>
+         <li class="flex items-center justify-between py-2">
+          <span class="flex items-center">
+           <i class="fas fa-comments mr-2">
+           </i>
+           Forums
+          </span>
+          <span class="text-sm font-semibold">
+           128
+          </span>
+         </li>
+         <li class="flex items-center justify-between py-2">
+          <span class="flex items-center">
+           <i class="fas fa-shopping-cart mr-2">
+           </i>
+           Shopping
+          </span>
+          <span class="text-sm font-semibold">
+           8
+          </span>
+         </li>
+         <li class="flex items-center justify-between py-2">
+          <span class="flex items-center">
+           <i class="fas fa-tag mr-2">
+           </i>
+           Promotions
+          </span>
+          <span class="text-sm font-semibold">
+           21
+          </span>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <!-- Main Content -->
+     <div class="flex-1 flex flex-col">
+      <!-- Header -->
+      <div class="flex items-center justify-between p-4 border-b bg-white">
+       <h1 class="text-xl font-semibold">
+        Inbox
+       </h1>
+       <div class="flex items-center space-x-4">
+        <button class="px-4 py-2 bg-gray-200 rounded">
+         All mail
+        </button>
+        <button class="px-4 py-2 bg-gray-200 rounded">
+         Unread
+        </button>
+        <i class="fas fa-search text-gray-500">
+        </i>
+        <i class="fas fa-sync-alt text-gray-500">
+        </i>
+        <i class="fas fa-trash text-gray-500">
+        </i>
+        <i class="fas fa-ellipsis-v text-gray-500">
+        </i>
+       </div>
+      </div>
+      <!-- Search Box -->
+      <div class="p-4 bg-white border-b">
+       <input class="w-1/3 p-2 border rounded" placeholder="Search email content" type="text"/>
+      </div>
+      <!-- Email List and Content -->
+      <div class="flex-1 flex overflow-hidden">
+       <!-- Email List -->
+       <div class="w-1/3 overflow-y-auto border-r">
+        <div class="p-4">
+         <div class="bg-white p-4 rounded-lg shadow mb-4">
+          <div class="flex justify-between items-center">
+           <div>
+            <h2 class="font-semibold">
+             William Smith
+            </h2>
+            <p class="text-sm text-gray-500">
+             Meeting Tomorrow
+            </p>
+           </div>
+           <span class="text-sm text-gray-500">
+            about 1 year ago
+           </span>
+          </div>
+          <p class="text-sm text-gray-700 mt-2">
+           Hi, let's have a meeting tomorrow to discuss the project. I've been reviewing the project details and have some ideas I'd like to share. It's crucial that we align on...
+          </p>
+          <div class="flex space-x-2 mt-2">
+           <span class="text-xs bg-gray-200 px-2 py-1 rounded">
+            meeting
+           </span>
+           <span class="text-xs bg-gray-200 px-2 py-1 rounded">
+            work
+           </span>
+           <span class="text-xs bg-gray-200 px-2 py-1 rounded">
+            important
+           </span>
+          </div>
+         </div>
+         <div class="bg-white p-4 rounded-lg shadow mb-4">
+          <div class="flex justify-between items-center">
+           <div>
+            <h2 class="font-semibold">
+             Alice Smith
+            </h2>
+            <p class="text-sm text-gray-500">
+             Re: Project Update
+            </p>
+           </div>
+           <span class="text-sm text-gray-500">
+            about 1 year ago
+           </span>
+          </div>
+          <p class="text-sm text-gray-700 mt-2">
+           Thank you for the project update. It looks great! I've gone through the report, and the progress is impressive. The team has done a fantastic job, and I appreciate...
+          </p>
+          <div class="flex space-x-2 mt-2">
+           <span class="text-xs bg-gray-200 px-2 py-1 rounded">
+            work
+           </span>
+           <span class="text-xs bg-gray-200 px-2 py-1 rounded">
+            important
+           </span>
+          </div>
+         </div>
+         <div class="bg-white p-4 rounded-lg shadow mb-4">
+          <div class="flex justify-between items-center">
+           <div>
+            <h2 class="font-semibold">
+             Bob Johnson
+            </h2>
+            <p class="text-sm text-gray-500">
+             Weekend Plans
+            </p>
+           </div>
+           <span class="text-sm text-gray-500">
+            over 1 year ago
+           </span>
+          </div>
+          <p class="text-sm text-gray-700 mt-2">
+           Any plans for the weekend? I was thinking of going hiking in the nearby mountains. It's been a while since we had some outdoor fun. If you're interested,...
+          </p>
+          <div class="flex space-x-2 mt-2">
+           <span class="text-xs bg-gray-200 px-2 py-1 rounded">
+            personal
+           </span>
+          </div>
+         </div>
+         <div class="bg-white p-4 rounded-lg shadow mb-4">
+          <div class="flex justify-between items-center">
+           <div>
+            <h2 class="font-semibold">
+             Emily Davis
+            </h2>
+            <p class="text-sm text-gray-500">
+             Re: Question about Budget
+            </p>
+           </div>
+           <span class="text-sm text-gray-500">
+            over 1 year ago
+           </span>
+          </div>
+          <p class="text-sm text-gray-700 mt-2">
+           I have a question about the budget for the upcoming project. It seems like there's a discrepancy in the allocation of resources. I've reviewed the budget report and...
+          </p>
+          <div class="flex space-x-2 mt-2">
+           <span class="text-xs bg-gray-200 px-2 py-1 rounded">
+            work
+           </span>
+           <span class="text-xs bg-gray-200 px-2 py-1 rounded">
+            budget
+           </span>
+          </div>
+         </div>
+         <div class="bg-white p-4 rounded-lg shadow mb-4">
+          <div class="flex justify-between items-center">
+           <div>
+            <h2 class="font-semibold">
+             Michael Wilson
+            </h2>
+            <p class="text-sm text-gray-500">
+             Important Announcement
+            </p>
+           </div>
+           <span class="text-sm text-gray-500">
+            over 1 year ago
+           </span>
+          </div>
+          <p class="text-sm text-gray-700 mt-2">
+           I have an important announcement to make during our team meeting. It pertains to a strategic shift in our approach to the upcoming product launch. We've...
+          </p>
+         </div>
+        </div>
+       </div>
+       <!-- Email Content -->
+       <div class="flex-1 p-4 overflow-y-auto">
+        <div class="bg-white p-4 rounded shadow">
+         <div class="flex items-center justify-between">
+          <div class="flex items-center">
+           <img alt="Sender avatar" class="rounded-full mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/QjaO7DWxx96bDZQFasR9EaTdPTs553IkWg0NXeSESX4CDa8JA.jpg" width="40"/>
+           <div>
+            <h2 class="font-semibold">
+             William Smith
+            </h2>
+            <p class="text-sm text-gray-500">
+             Meeting Tomorrow
+            </p>
+            <p class="text-xs text-gray-400">
+             Reply-To: williamsmith@example.com
+            </p>
+           </div>
+          </div>
+          <p class="text-xs text-gray-400">
+           Oct 22, 2023, 9:00:00 AM
+          </p>
+         </div>
+         <div class="mt-4">
+          <p>
+           Hi, let’s have a meeting tomorrow to discuss the project. I’ve been reviewing the project details and have some ideas I’d like to share. It’s crucial that we align on our next steps to ensure the project’s success.
+          </p>
+          <p class="mt-4">
+           Please come prepared with any questions or insights you may have. Looking forward to our meeting!
+          </p>
+          <p class="mt-4">
+           Best regards, William
+          </p>
+         </div>
+        </div>
+        <div class="mt-4">
+         <textarea class="w-full p-2 border rounded" placeholder="Reply William Smith..."></textarea>
+         <div class="flex items-center justify-between mt-2">
+          <div class="flex items-center">
+           <input class="mr-2" id="mute" type="checkbox"/>
+           <label class="text-sm" for="mute">
+            Mute this thread
+           </label>
+          </div>
+          <button class="px-4 py-2 bg-black text-white rounded">
+           Send
+          </button>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </body>
+</html>
